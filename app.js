@@ -114,6 +114,6 @@ app.get('*', function(req, res){
     res.send("OOPS!!! FOUND NOTHING")
 });
  
-app.listen(3000, function(){
+app.listen(process.env.port || 3000, function(){
     console.log("Server started for BLOGAPP at port 3000")
 });
